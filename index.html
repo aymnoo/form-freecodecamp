@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class=" header">
+      <h1 id="title" class="text-center">
+        freeCodeCamp Survey Form
+        </h1>
+      <p id="description" class="text-center">
+        Thank you for taking the time to help us improve the platform
+        </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label">Name</label>
+        <input id="name" type="text" required placeholder="Enter your name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label id="email-label">Email</label>
+        <input id="email" type="email" required placeholder="Enter your email" class="form-control">
+      </div>
+      <div class="form-group">
+      <label id="number-label">Age <span class="clue">(Optional)</span></label>
+      <input id="number" type="number" required min="13" max="120" placeholder="Enter your age" class="form-control">
+      </div>
+      <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control"> 
+          <option disabled slected value>Select curent role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferno">Prefer Not To Say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" value="d" name="recommendation" class="input-radio">Definitely</label>
+        <label><input type="radio" value="m" name="recommendation" class="input-radio">Maybe</label>
+        <label><input type="radio" value="ns" name="recommendation" class="input-radio">Not Sure</label>
+      </div>
+      <div class="form-group":hover>
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <label>
+          <input type="checkbox" value="FE" class="input-checkbox">Front-end Projects
+        </label>
+        <label>
+          <input type="checkbox" value="BE" class="input-checkbox">Back-end Projects
+        </label>
+        <label><input type="checkbox" value="DV" class="input-checkbox">Data Visualization</label>
+        <label><input type="checkbox" value="CH" class="input-checkbox">Challenges</label>
+        <label><input type="checkbox" value="SC" class="input-checkbox">Open Source Community</label>
+        <label><input type="checkbox" value="GH" class="input-checkbox">Gitter help rooms</label>
+        <label><input type="checkbox" value="V" class="input-checkbox">Videos</label>
+        <label><input type="checkbox" value="CM" class="input-checkbox">City Meetups</label>
+        <label><input type="checkbox" value="W" class="input-checkbox">Wiki</label>
+        <label><input type="checkbox" value="F" class="input-checkbox">Forum</label>
+        <label><input type="checkbox" value="AC" class="input-checkbox">Additional Courses</label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea class="input-textarea" placeholder="Enter your comment here"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
